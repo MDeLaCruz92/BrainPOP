@@ -26,7 +26,6 @@ enum Ingredient: Int {
 }
 
 struct Brain {
-    
     private var _id: Int!
     private var _productName: String!
     private var _freezeId: BrainFreeze!
@@ -36,15 +35,12 @@ struct Brain {
     var id: Int {
         return _id
     }
-    
     var productName: String {
         return _productName
     }
-    
     var freezeId: BrainFreeze {
         return _freezeId
     }
-    
     var flavorId: Flavors {
         return _flavorId
     }
@@ -55,8 +51,7 @@ struct Brain {
     init(id: Int, productName: String, freezeId: Int, flavorId: Int, ingredientId: Int) {
         _id = id
         _productName = productName
-    
-    
+        
     // Brain Freeze
     switch freezeId {
     case 2:
@@ -64,7 +59,6 @@ struct Brain {
     default:
         self._freezeId = BrainFreeze.Cream
         }
-    
     // Flavors 
     switch flavorId {
     case 2:
@@ -76,7 +70,6 @@ struct Brain {
     default:
         self._flavorId = Flavors.Vanilla
     }
-    
     // Ingredient
     switch ingredientId {
     case 2:
@@ -85,5 +78,4 @@ struct Brain {
         self._ingredientId = Ingredient.Milk
         }
     }
-    
 }

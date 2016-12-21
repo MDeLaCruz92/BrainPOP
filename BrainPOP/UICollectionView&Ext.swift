@@ -23,5 +23,4 @@ extension UICollectionView {
         return cell
     }
 }
-
 extension UICollectionView: ReusableView {}

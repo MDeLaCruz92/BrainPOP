@@ -121,7 +121,6 @@
 		82A940CE1DDE4A7500E0D236 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				82A940AE1DDE4A6C00E0D236 /* AppDelegate.swift */,
 				82A940D51DDE4AE800E0D236 /* MainVC.swift */,
 			);
 			name = Controller;
@@ -151,6 +150,7 @@
 		82A940D21DDE4A9600E0D236 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				82A940AE1DDE4A6C00E0D236 /* AppDelegate.swift */,
 				82A940BA1DDE4A6C00E0D236 /* Info.plist */,
 				82A940B51DDE4A6C00E0D236 /* Assets.xcassets */,
 			);
