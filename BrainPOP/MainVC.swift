@@ -28,13 +28,9 @@ class MainVC: UIViewController, DataServiceDelegate {
         
         headerView.addDropShadow()
         
-       
         let nib = UINib(nibName: "BrainFreezeCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: "BrainFreezeCell")
- 
-        
-        // collectionView.register(BrainFreezeCell.self)
-    }
+     }
     
     func brainFreezeLoaded() {
         print("Brain Freeze data has been loaded!")
@@ -47,7 +43,7 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         return 1
     }
     
-        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             return ds.brainArray.count
         }
     
@@ -74,9 +70,6 @@ extension MainVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 95, height: 95)
     }
-    
-    
-    
 }
 
 
