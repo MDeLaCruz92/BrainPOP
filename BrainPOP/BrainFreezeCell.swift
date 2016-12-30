@@ -9,17 +9,17 @@
 import UIKit
 
 class BrainFreezeCell: UICollectionViewCell, NibLoadableView, Shakeable {
-
-    @IBOutlet weak var brainFreezeImage: UIImageView!
-    @IBOutlet weak var brainFreezeLabel: UILabel!
-    
-    var brain: Brain!
-    
-    func configureCell(brain: Brain) {
-        self.brain = brain
-        brainFreezeImage.image = UIImage(named: brain.flavorId.rawValue)
-        brainFreezeLabel.text = brain.productName
-    }
-    
-
+  
+  @IBOutlet weak var brainFreezeImage: UIImageView!
+  @IBOutlet weak var brainFreezeLabel: UILabel!
+  
+  var brain: Brain!
+  
+  func configureCell(brain: Brain) {
+    self.brain = brain
+    brainFreezeImage.image = UIImage(named: brain.flavorId.rawValue)
+    brainFreezeLabel.text = brain.productName
+  }
+  
+  
 }

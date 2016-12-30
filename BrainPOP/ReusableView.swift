@@ -12,8 +12,8 @@ protocol ReusableView: class {}
 
 // Constrainting to UIView
 extension ReusableView where Self: UIView {
-    static var reuseIdentifier: String {
-        return String(describing: self)
-    }
+  static var reuseIdentifier: String {
+    return String(describing: self)
+  }
 }
 
